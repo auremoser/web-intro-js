@@ -1,4 +1,4 @@
-# web-js
+# web-intro-js
 [curriculum] files and resources for Metrics and Data Visualization I, Fall 2016
 
 ### Class 1
@@ -7,7 +7,7 @@ Introduction to JavaScript and Basic Programming Concepts
 
 An overview of the history of JavaScript, what it is, and how it interacts with the browser. Covers basic JavaScript concepts including variables, data types, and functions. 
 
-## Class 2
+### Class 2
 Control Flow
 
 Introduces boolean variable, if/then statements, loops, and arrays.

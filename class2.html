@@ -72,7 +72,7 @@ console.log(receipt);
                   <pre><code>
 var awesomeGroup = 'Corgis'; //Global scope
 function whatIsAwesome() {
-    console.log (awesomeGroup + ' is pretty awesome.'); //Will work
+    console.log (awesomeGroup + ' are pretty awesome.'); //Will work
 }
 whatIsAwesome();
 
@@ -87,7 +87,7 @@ function whatIsAwesome() {
     console.log ('I made a variable called awesomeGroup with a value of ' + awesomeGroup); //Will work
 }
 whatIsAwesome();
-console.log (awesomeGroup + ' is pretty awesome.'); //Won't work
+console.log (awesomeGroup + ' are pretty awesome.'); //Won't work
 				</code></pre>
         <!--on the slide, line 84 has a purple { and it's closing bracket } on line 87 is white. do they need to be the same color?-->
             </section>
@@ -174,13 +174,13 @@ if (bananas &gt; 0) {
                 </table>
 			</section>
             <section>
-                <h3>Watch out!</h3>
-                <p>Don't mix up = and ==</p>
+                <h3>Watch out</h3>
+                <p>Don't mix up = and == and ===</p>
                 <br/>
                 <p><a href="http://www.impressivewebs.com/why-use-triple-equals-javascipt/" target="_blank">Learn more about the difference between operators</a></p>
             </section>
             <section>
-				<h3>Let's Practice</h3>
+				<h3>Practice</h3>
                 <p>Make a variable called "temperature." Write some code that tells you to put on a coat if it is below 50 degrees.</p>
 			</section>
 
@@ -209,13 +209,12 @@ if (age &gt;= 35) {
 } else if (age &gt;= 18) {
     console.log('You can vote!');
 } else {
-    console.log('You can\'t vote, but you can
-    still write your representatives.');
+    console.log('You can\'t vote, but you can still write your representatives.');
 }
 				</code></pre>
             </section>
              <section>
-				<h3>Let's Practice</h3>
+				<h3>Practice</h3>
                 <p>Modify your "wear a coat" code for these conditions:</p>
                 <ol>
                     <li>If it is less than 50 degrees, wear a coat.</li>
@@ -259,14 +258,14 @@ if (age &gt;= 35) {
                 <pre><code>
 var bananas = 5;
 if (bananas &gt;=2 &amp;&amp; bananas &lt;7) {
-    console.log ('You have a reasonable number of bananas');
+    console.log ('You have a reasonable number of bananas.');
 } else {
-    console.log ('Check your banana supply');
+    console.log ('Check your banana supply.');
 }
 				</code></pre>
             </section>
             <section>
-				<h3>Let's Practice</h3>
+				<h3>Practice</h3>
                 <p>Add a logical operator to your what to wear program.</p>
 			</section>
 
@@ -302,12 +301,12 @@ for (var i = 1; i &lt;= 10; i++) {
 //Count from 1 to 50
 for (var i = 1; i &lt;= 50; i++) {
     console.log (i);
-    //Says 'Buzz' after multiples of three
-    if (i % 3 == 0) {
-        console.log (' Buzz');
+    //Says 'Boom' after multiples of three
+    if (i % 3 === 0) {
+        console.log (' Boom');
     }
     //Says 'Bang' after multiples of five
-    if (i % 5 == 0) {
+    if (i % 5 === 0) {
         console.log (' Bang');
     }
 }
@@ -329,7 +328,7 @@ for (var i = 100; i &lt;= 200; i++) {
 				</code></pre>
             </section>
             <section>
-				<h3>Let's Practice</h3>
+				<h3>Practice</h3>
                 <p>Write a loop that gives you the 9's times table,<br /> from 9 x 1 = 9 to 9 x 12 = 108.</p>
                 <p>Finish early? Try using a loop inside a loop to write all the times tables, from 1 to 12.</p>
 			</section>
@@ -345,7 +344,7 @@ var arrayName = [element0, element1, ...];
 var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green',
 'Blue', 'Indigo', 'Violet'];
 var lotteryNumbers = [33, 72, 64, 18, 17, 85];
-var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
+var myFavoriteThings = ['Broccoli', 'Rainbows', 1024, 'Skam'];
 				</code></pre>
             </section>
             <section>
@@ -371,7 +370,7 @@ var lastColor = rainbowColors[6];
                 <h3>Changing arrays</h3>
                 <p>You can use bracket notation to change an item in an array</p>
                 <pre><code>
-var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
+var myFavoriteThings = ['Broccoli', 'Rainbows', 1024, 'Skam'];
 myFavoriteThings[0] = 'Asparagus';
                 </code></pre>
             </section>
@@ -379,12 +378,12 @@ myFavoriteThings[0] = 'Asparagus';
                 <h3>Expanding arrays</h3>
                 <p>Arrays do not have a fixed length. You can use "push" to add something to an array.</p>
                 <pre><code>
-var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
-myFavoriteThings.push('Dancing');
+var myFavoriteThings = ['Broccoli', 'Rainbows', 1024, 'Skam'];
+myFavoriteThings.push('Cycling');
                 </code></pre>
             </section>
             <section>
-				<h3>Let's Practice</h3>
+				<h3>Practice</h3>
                 <p>Create an array of your favorite foods. Echo a few values onto your screen.</p>
 			</section>
 
@@ -399,22 +398,25 @@ for (var i = 0; i &lt; rainbowColors.length; i++) {
                 </code></pre>
             </section>
             <section>
-				<h3>Let's Practice</h3>
+				<h3>Practice</h3>
                 <p>Use a loop to make a list of all your favorite foods.</p>
 			</section>
 
 			<section>
 				<h3>Resources</h3>
-					<ul>
-						<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">JavaScript Guide</a>, from the Mozilla Developers Network.</li>
-						<li><a href="http://www.codecademy.com/tracks/javascript" target="_blank">Codecademy</a>, with interactive JavaScript lessons to help you review.</li>
-					</ul>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">JavaScript Guide</a>, from the Mozilla Developers Network.</li>
+            <li><a href="http://www.codecademy.com/tracks/javascript" target="_blank">Codecademy</a>, with interactive JavaScript lessons to help you review.</li>
+            <li><a href="https://www.udacity.com/course/javascript-basics--ud804" target="_blank">Udacity</a>, javascript basics course online.</li>
+            <li><a href="https://www.codeschool.com/courses/javascript-road-trip-part-1" target="_blank">Code School</a>, javascript part 1 tutorial.</li>
+            <li><a href="https://dash.generalassemb.ly/" target="_blank">Dash</a>, free online tool for JS/HTML/CSS integration from General Assembly.</li>
+          </ul>
 			</section>
 
 			</div><!-- Close .slides -->
   		<footer>
         <div class="copyright">
-          Beginners JS ~ Parsons Web Coding ~
+          Beginners JS ~ SVA Web Coding ~
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div><!-- Close .copyright -->
       </footer>
